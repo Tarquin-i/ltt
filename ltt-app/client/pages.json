@@ -1,17 +1,49 @@
 {
-	"pages": [
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "扫码激活",
-				"navigationStyle": "custom"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "信码产品激活系统",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "mp-html": "mp-html/dist/uni-app/components/mp-html/mp-html.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/book/index",
+      "style": {
+        "navigationBarTitleText": "The Art of Perfumery",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/more/index",
+      "style": {
+        "navigationBarTitleText": "更多"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "LTT",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#333333",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/book/index",
+        "text": "阅读",
+        "iconPath": "static/tab/book.png",
+        "selectedIconPath": "static/tab/book-active.png"
+      },
+      {
+        "pagePath": "pages/more/index",
+        "text": "更多",
+        "iconPath": "static/tab/more.png",
+        "selectedIconPath": "static/tab/more-active.png"
+      }
+    ]
+  }
 }

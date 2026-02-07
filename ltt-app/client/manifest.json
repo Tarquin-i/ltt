@@ -1,5 +1,5 @@
 {
-    "name" : "信码激活",
+    "name" : "LTT Reader",
     "appid" : "__UNI__8373D04",
     "description" : "",
     "versionName" : "1.0.0",
@@ -96,5 +96,5 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "2"
+    "vueVersion" : "3"
 }
