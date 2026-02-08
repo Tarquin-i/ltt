@@ -1,19 +1,17 @@
-<script setup>
-import { onLaunch, onShow, onHide } from '@dcloudio/uni-app'
-
-onLaunch(() => {
-  console.log('App Launch')
-})
-
-onShow(() => {
-  console.log('App Show')
-})
-
-onHide(() => {
-  console.log('App Hide')
-})
+<script>
+export default {
+  onLaunch() {
+    console.log('App Launch')
+  },
+  onShow() {
+    console.log('App Show')
+  },
+  onHide() {
+    console.log('App Hide')
+  },
+}
 </script>
 
-<style>
-@import url("styles/common.scss");
+<style lang="scss">
+@import "./styles/common.scss";
 </style>

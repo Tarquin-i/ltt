@@ -3,7 +3,7 @@
     <view class="toolbar-row">
       <!-- 目录按钮 -->
       <view class="toolbar-btn" @click="$emit('toggleDrawer')">
-        <text class="btn-icon">☰</text>
+        <text class="toolbar-icon" :style="{ color: isDark ? '#f0f0f0' : '#333' }">☰</text>
         <text class="btn-label">目录</text>
       </view>
 
@@ -39,15 +39,15 @@
   </view>
 </template>
 
-<script setup>
-defineProps({
-  isDark: { type: Boolean, default: false },
-  fontSize: { type: Number, default: 16 },
-  fontSizeMin: { type: Number, default: 14 },
-  fontSizeMax: { type: Number, default: 24 },
-})
-
-defineEmits(['toggleDrawer', 'decreaseFont', 'increaseFont', 'toggleDark'])
+<script>
+export default {
+  props: {
+    isDark: { type: Boolean, default: false },
+    fontSize: { type: Number, default: 16 },
+    fontSizeMin: { type: Number, default: 14 },
+    fontSizeMax: { type: Number, default: 24 },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -64,7 +64,7 @@ defineEmits(['toggleDrawer', 'decreaseFont', 'increaseFont', 'toggleDark'])
   &.dark {
     background: #222;
     border-top-color: #333;
-    .btn-icon, .btn-label, .font-size-text { color: #ccc; }
+    .btn-icon, .btn-label, .font-size-text { color: #f0f0f0; }
     .toolbar-btn.disabled .btn-icon { color: #555; }
   }
 }
@@ -93,6 +93,8 @@ defineEmits(['toggleDrawer', 'decreaseFont', 'increaseFont', 'toggleDark'])
   font-size: 32rpx;
   color: #333;
 }
+
+.toolbar-icon { font-size: 36rpx; }
 
 .btn-label {
   font-size: 20rpx;

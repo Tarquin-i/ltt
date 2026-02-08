@@ -1,0 +1,63 @@
+import { BookMeta } from '../types/book';
+
+export const bookMeta: BookMeta = {
+  "title": "The Art of Perfumery",
+  "subtitle": "And Methods of Obtaining the Odors of Plants",
+  "author": "G.W. Septimus Piesse",
+  "chapters": [
+    { "id": "preface", "title": "Preface", "subtitle": "", "description": "" },
+    { "id": "section-01", "title": "Section I", "subtitle": "Introduction and History", "description": "Perfumes in use from the Earliest Periods" },
+    { "id": "section-02", "title": "Section II", "subtitle": "Expression, Distillation, Maceration, Absorption", "description": "Methods of obtaining the Odors" },
+    { "id": "section-03", "title": "Section III", "subtitle": "Simple Extracts", "description": "Steam-Still—Macerating Pan—Simple Extracts" },
+    { "id": "section-04", "title": "Section IV", "subtitle": "Animal Perfumes", "description": "Ambergris—Civet—Musk" },
+    { "id": "section-05", "title": "Section V", "subtitle": "Smelling Salts and Acetic Acid", "description": "Smelling Salts and Acetic Acid" },
+    { "id": "section-06", "title": "Section VI", "subtitle": "Bouquets and Nosegays", "description": "Compound Odors" },
+    { "id": "section-07", "title": "Section VII", "subtitle": "Sachets, Pastils and Fumigation", "description": "Sachet Powders—Pot Pourri" },
+    { "id": "section-08", "title": "Section VIII", "subtitle": "Perfumed Soap", "description": "Ancient Origin of Soap" },
+    { "id": "section-09", "title": "Section IX", "subtitle": "Emulsines", "description": "Form Emulsions or Milks" },
+    { "id": "section-10", "title": "Section X", "subtitle": "Milks or Emulsions", "description": "Milk of Roses—Milk of Almonds" },
+    { "id": "section-11", "title": "Section XI", "subtitle": "Cold Cream", "description": "Cold Cream of Almonds" },
+    { "id": "section-12", "title": "Section XII", "subtitle": "Pomades and Oils", "description": "Pomatum originally made with Apples" },
+    { "id": "section-13", "title": "Section XIII", "subtitle": "Hair Dyes and Depilatories", "description": "Hair Dyes and Depilatories" },
+    { "id": "section-14", "title": "Section XIV", "subtitle": "Absorbent Powders", "description": "Violet Powder—Rose Face Powder" },
+    { "id": "section-15", "title": "Section XV", "subtitle": "Tooth Powders and Mouth Washes", "description": "Tooth Powders and Mouth Washes" },
+    { "id": "section-16", "title": "Section XVI", "subtitle": "Hair Washes", "description": "Rosemary Hair Wash" },
+    {
+      "id": "appendix",
+      "title": "Appendix",
+      "subtitle": "",
+      "description": "",
+      "subChapters": [
+        { "title": "MANUFACTURE OF GLYCERINE.", "anchor": "MANUFACTURE_OF_GLYCERINE" },
+        { "title": "TEST FOR ALCOHOL IN ESSENTIAL OILS.", "anchor": "TEST_FOR_ALCOHOL_IN_ESSENTIAL_OILS" },
+        { "title": "DETECTION OF POPPY AND OTHER DRYING OILS IN ALMOND AND OLIVE OILS.", "anchor": "DETECTION_OF_POPPY_AND_OTHER_DRYING_OILS_IN_ALMOND_AND_OLIVE_OILS" },
+        { "title": "COLORING MATTER OF VOLATILE OILS.", "anchor": "COLORING_MATTER_OF_VOLATILE_OILS" },
+        { "title": "ARTIFICIAL PREPARATION OF OIL OF CINNAMON.", "anchor": "ARTIFICIAL_PREPARATION_OF_OIL_OF_CINNAMON" },
+        { "title": "DETECTION OF SPIKE OIL AND TURPENTINE IN LAVENDER OIL", "anchor": "DETECTION_OF_SPIKE_OIL_AND_TURPENTINE_IN_LAVENDER_OIL" },
+        { "title": "DIFFERENT ORANGE-FLOWER WATERS FOUND IN COMMERCE", "anchor": "DIFFERENT_ORANGE-FLOWER" },
+        { "title": "A FORMULA FOR CONCENTRATED ELDER-FLOWER WATER.", "anchor": "A_FORMULA_FOR_CONCENTRATED" },
+        { "title": "PRACTICAL REMARKS ON SPIRIT OF WINE.", "anchor": "PRACTICAL_REMARKS_ON_SPIRIT_OF_WINE" },
+        { "title": "PURIFICATION OF SPIRITS BY FILTRATION.", "anchor": "PURIFICATION_OF_SPIRITS" },
+        { "title": "ON ESSENTIAL OIL OR OTTO OF LEMONS.", "anchor": "ON_ESSENTIAL_OIL_OR_OTTO_OF_LEMONS" },
+        { "title": "BENZOIC ACID, AND TESTS FOR ITS PURITY.", "anchor": "BENZOIC_ACID_AND_TESTS_FOR_ITS_PURITY" },
+        { "title": "ON THE COLORING-MATTERS OF FLOWERS.", "anchor": "ON_THE_COLORING-MATTERS_OF_FLOWERS" },
+        { "title": "IMPROVED PROCESS FOR BLEACHING BEES'-WAX AND THE FATTY ACIDS.", "anchor": "IMPROVED_PROCESS_FOR" },
+        { "title": "CHEMICAL EXAMINATION OF NAPLES SOAP.", "anchor": "CHEMICAL_EXAMINATION_OF_NAPLES" },
+        { "title": "MANUFACTURE OF SOAP.", "anchor": "MANUFACTURE_OF_SOAP" },
+        { "title": "A SIMPLE AND CERTAIN METHOD TO DETERMINE THE COMMERCIAL VALUE OF SOAP.", "anchor": "A_SIMPLE_AND_CERTAIN_METHOD_TO_DETERMINE" },
+        { "title": "ON THE NATURAL FATS.", "anchor": "ON_THE_NATURAL_FATS" },
+        { "title": "PERFUMES AS PREVENTIVES OF MOULDINESS.", "anchor": "PERFUMES_AS_PREVENTIVES" },
+        { "title": "FUSEL OIL.", "anchor": "FUSEL_OIL" },
+        { "title": "ESSENCE OF PINE-APPLE.", "anchor": "ESSENCE_OF_PINE-APPLE" },
+        { "title": "PREPARATION OF CRUDE PELARGONATE OF ETHYL-OXIDE (ESSENCE OF QUINCE.)", "anchor": "PREPARATION_OF_CRUDE_PELARGONATE" },
+        { "title": "PREPARATION OF RUM-ETHER.", "anchor": "PREPARATION_OF_RUM-ETHER" },
+        { "title": "ARTIFICIAL FRUIT ESSENCES.", "anchor": "ARTIFICIAL_FRUIT_ESSENCES" },
+        { "title": "VOLATILE OIL OF GAULTHERIA PROCUMBENS.", "anchor": "VOLATILE_OIL_OF_GAULTHERIA" },
+        { "title": "ON THE APPLICATION OF ORGANIC CHEMISTRY TO PERFUMERY.", "anchor": "ON_THE_APPLICATION_OF_ORGANIC" },
+        { "title": "CORRESPONDENCE FROM THE \"JOURNAL OF THE SOCIETY OF ARTS.\"[N]", "anchor": "CORRESPONDENCE_FROM_THE" },
+        { "title": "OTTOS FROM PLANTS.", "anchor": "OTTOS_FROM_PLANTS" },
+        { "title": "WEIGHTS AND MEASURES.", "anchor": "WEIGHTS_AND_MEASURES" }
+      ]
+    }
+  ]
+};

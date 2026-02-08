@@ -17,24 +17,24 @@ const DATA_DIR = path.join(CLIENT_DIR, 'data')
 
 // 章节定义：anchor ID → 元数据
 const CHAPTER_DEFS = [
-  { id: 'preface', anchor: 'Preface', title: 'Preface', subtitle: '' },
-  { id: 'section-01', anchor: 'INTRODUCTION_AND_HISTORY', title: 'Section I', subtitle: 'Introduction and History' },
-  { id: 'section-02', anchor: 'SECTION_II', title: 'Section II', subtitle: 'Methods of Obtaining Odors' },
-  { id: 'section-03', anchor: 'SECTION_III', title: 'Section III', subtitle: 'Simple Extracts' },
-  { id: 'section-04', anchor: 'SECTION_IV', title: 'Section IV', subtitle: 'Animal Perfumes' },
-  { id: 'section-05', anchor: 'SECTION_V', title: 'Section V', subtitle: 'Smelling Salts' },
-  { id: 'section-06', anchor: 'SECTION_VI', title: 'Section VI', subtitle: 'Bouquets and Nosegays' },
-  { id: 'section-07', anchor: 'SECTION_VII', title: 'Section VII', subtitle: 'Sachet Powders' },
-  { id: 'section-08', anchor: 'SECTION_VIII', title: 'Section VIII', subtitle: 'Perfumed Soap' },
-  { id: 'section-09', anchor: 'SECTION_IX', title: 'Section IX', subtitle: 'Emulsines' },
-  { id: 'section-10', anchor: 'SECTION_X', title: 'Section X', subtitle: 'Milks or Emulsions' },
-  { id: 'section-11', anchor: 'SECTION_XI', title: 'Section XI', subtitle: 'Cold Cream' },
-  { id: 'section-12', anchor: 'SECTION_XII', title: 'Section XII', subtitle: 'Pomades and Oils' },
-  { id: 'section-13', anchor: 'SECTION_XIII', title: 'Section XIII', subtitle: 'Hair Dyes and Depilatories' },
-  { id: 'section-14', anchor: 'SECTION_XIV', title: 'Section XIV', subtitle: 'Absorbent Powders' },
-  { id: 'section-15', anchor: 'SECTION_XV', title: 'Section XV', subtitle: 'Tooth Powders and Mouth Washes' },
-  { id: 'section-16', anchor: 'SECTION_XVI', title: 'Section XVI', subtitle: 'Hair Washes' },
-  { id: 'appendix', anchor: 'APPENDIX', title: 'Appendix', subtitle: '' },
+  { id: 'preface', anchor: 'Preface', title: 'Preface', subtitle: '', description: '' },
+  { id: 'section-01', anchor: 'INTRODUCTION_AND_HISTORY', title: 'Section I', subtitle: 'Introduction and History', description: 'Perfumes in use from the Earliest Periods—Origin lost in the Depth of its Antiquity—Possibly derived from Religious Observances—Use of perfumes by the Greeks and Romans—Scriptural Authority for the use of Perfume—The Art of Perfumery of little Distinction in England—The South of France the principal Seat of the Art—Odor of Plants owing to a peculiar Principle known as Essential Oil or Otto' },
+  { id: 'section-02', anchor: 'SECTION_II', title: 'Section II', subtitle: 'Expression, Distillation, Maceration, Absorption', description: 'Consumption of Perfumery—Methods of obtaining the Odors: Expression, Distillation, Maceration, Absorption' },
+  { id: 'section-03', anchor: 'SECTION_III', title: 'Section III', subtitle: 'Simple Extracts', description: 'Steam-Still—Macerating Pan—Ottos exhibited at the Crystal Palace of 1851—Simple Extracts: Allspice, Almond, Anise, Balm, Balsams, Bergamot, Benzoin, Cassia, Cassie, Cedar, Cinnamon, Clove, Geranium, Heliotrope, Jasmine, Jonquil, Lavender, Lilac, Magnolia, Mignonette, Myrtle, Neroli, Orange, Orris, Patchouly, Rose, Rosemary, Santal, Thyme, Tonquin, Tuberose, Vanilla, Verbena, Violet, and more' },
+  { id: 'section-04', anchor: 'SECTION_IV', title: 'Section IV', subtitle: 'Animal Perfumes', description: 'Ambergris—Civet—Musk' },
+  { id: 'section-05', anchor: 'SECTION_V', title: 'Section V', subtitle: 'Smelling Salts and Acetic Acid', description: 'Smelling Salts: Ammonia, Preston Salts, Inexhaustible Salts, Eau de Luce, Sal Volatile—Acetic Acid and its Use in Perfumery: Aromatic Vinegar, Four Thieves\' Vinegar, Toilet Vinegar, Vinaigre de Cologne' },
+  { id: 'section-06', anchor: 'SECTION_VI', title: 'Section VI', subtitle: 'Bouquets and Nosegays', description: 'Proposed Use of the Term "Otto"—Compound Odors: Alhambra Perfume, Bosphorus Bouquet, Buckingham Palace Bouquet, Eau de Chypre, Ess Bouquet, Eau de Cologne, Jockey Club, Millefleurs, Rondeletia, and more' },
+  { id: 'section-07', anchor: 'SECTION_VII', title: 'Section VII', subtitle: 'Sachets, Pastils and Fumigation', description: 'Sachet Powders—Pot Pourri—Olla Podrida—Perfumed Leather—Peau d\'Espagne—Perfumed Letter Paper—Pastils—The Censer—Incense for Altar Service—Fumigation—The Perfume Lamp—Fumigating Paper—Odoriferous Lighters' },
+  { id: 'section-08', anchor: 'SECTION_VIII', title: 'Section VIII', subtitle: 'Perfumed Soap', description: 'Ancient Origin of Soap—Remelting—Primary Soaps—Scented Soaps: Almond, Camphor, Honey, Windsor, Otto of Rose, Patchouly, Transparent Soap—Medicated Soaps: Juniper Tar, Iodine, Sulphur, Creosote' },
+  { id: 'section-09', anchor: 'SECTION_IX', title: 'Section IX', subtitle: 'Emulsines', description: 'Form Emulsions or Milks when mixed with Water—Amandine—Olivine—Honey and Almond Paste—Jasmine Emulsion—Violet Emulsion' },
+  { id: 'section-10', anchor: 'SECTION_X', title: 'Section X', subtitle: 'Milks or Emulsions', description: 'Liebig\'s notice of Almond Milk—Milk of Roses—Milk of Almonds—Milk of Elder—Milk of Cucumber—Lait Virginal—Extract of Elder Flowers' },
+  { id: 'section-11', anchor: 'SECTION_XI', title: 'Section XI', subtitle: 'Cold Cream', description: 'Manipulation—Cold Cream of Almonds—Violet Cold Cream—Camphor Cold Cream—Cucumber Cold Cream—Pomade Divine—Almond Balls—Camphor Balls—Glycerine Balsam—Rose Lip Salve' },
+  { id: 'section-12', anchor: 'SECTION_XII', title: 'Section XII', subtitle: 'Pomades and Oils', description: 'Pomatum originally made with Apples—Enfleurage and Maceration process—Cassie Pomade—Benzoin Pomade—Bear\'s Grease—Circassian Cream—Crystallized Oils—Marrow Cream—Philocome—Hard or Stick Pomatums' },
+  { id: 'section-13', anchor: 'SECTION_XIII', title: 'Section XIII', subtitle: 'Hair Dyes and Depilatories', description: 'Painting the Face universal among the Women of Egypt—Kohhl—Turkish Hair Dye—Silver Dye—Hair Dyes with Mordant—Brown and Black Hair Dye—Depilatory, Rusma' },
+  { id: 'section-14', anchor: 'SECTION_XIV', title: 'Section XIV', subtitle: 'Absorbent Powders', description: 'Violet Powder—Rose Face Powder—Perle Powder—Liquid Blanc for Theatrical Use—Calcined Talc—Rouge and Red Paints—Bloom of Roses—Carmine Toilet Rouge' },
+  { id: 'section-15', anchor: 'SECTION_XV', title: 'Section XV', subtitle: 'Tooth Powders and Mouth Washes', description: 'Mialhi\'s Tooth Powder—Camphorated Chalk—Quinine Tooth Powder—Prepared Charcoal—Borax and Myrrh—Rose Tooth Powder—Violet Mouth Wash—Eau Botot—Tincture of Myrrh' },
+  { id: 'section-16', anchor: 'SECTION_XVI', title: 'Section XVI', subtitle: 'Hair Washes', description: 'Rosemary Hair Wash—Athenian Water—Vegetable or Botanic Hair Wash—Astringent Extract of Roses and Rosemary—Saponaceous Wash—Egg Julep—Bandolines' },
+  { id: 'appendix', anchor: 'APPENDIX', title: 'Appendix', subtitle: '', description: '' },
 ]
 
 function ensureDir(dir) {
@@ -62,6 +62,11 @@ function cleanHtml(html) {
   html = html.replace(/<span class="pagenum"[^>]*>.*?<\/span>/g, '')
   // 移除空的 page anchor: <p><a id="Page_XX"></a></p>
   html = html.replace(/<p><a id="Page_\d+"><\/a><\/p>/g, '')
+  // 移除残留的 Page_XX id 属性（在其他标签上）
+  html = html.replace(/ id="Page_\d+"/g, '')
+  // 移除脚注锚点 id（FNanchor_XX, Footnote_XX 等）
+  html = html.replace(/ id="FN[^"]*"/g, '')
+  html = html.replace(/ id="Footnote_[^"]*"/g, '')
   // 移除 pginternal 链接的 href（改为纯文本或内部锚点）
   html = html.replace(/href="https:\/\/www\.gutenberg\.org[^"]*#([^"]*)"/g, 'href="#$1"')
   return html.trim()
@@ -138,7 +143,7 @@ function parseBook() {
     chapterHtmls[def.id] = cleanHtml(html)
   })
 
-  return chapterHtmls
+  return { chapterHtmls, $ }
 }
 
 function writeChapterFiles(chapterHtmls) {
@@ -148,31 +153,62 @@ function writeChapterFiles(chapterHtmls) {
     const html = chapterHtmls[def.id]
     if (!html) return
 
-    // 转义反引号和 ${} 模板字符串语法
-    const escaped = html.replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$\{/g, '\\${')
-    const content = `export default \`${escaped}\`\n`
+    const content = `export default ${JSON.stringify(html)}\n`
     const filePath = path.join(CHAPTERS_DIR, `${def.id}.js`)
     fs.writeFileSync(filePath, content)
     console.log(`Written: data/chapters/${def.id}.js (${html.length} chars)`)
   })
 }
 
-function writeBookMeta() {
+function extractAppendixSubChapters($) {
+  const subChapters = []
+  const appendixH2 = $('body').find('h2 a#APPENDIX').parent()
+  let current = appendixH2.next()
+  while (current.length > 0) {
+    if (current.is('h3')) {
+      const anchor = current.find('a').attr('id')
+      const title = current.text().trim().replace(/\s+/g, ' ')
+      if (anchor && title && title !== 'FOOTNOTES:') {
+        subChapters.push({ title, anchor })
+      }
+    }
+    // 停止条件
+    const tagName = current.prop('tagName')
+    if (tagName && ['PRE', 'SECTION', 'STYLE', 'SCRIPT'].includes(tagName.toUpperCase())) break
+    if (current.is('h2')) break
+    current = current.next()
+  }
+  return subChapters
+}
+
+function writeBookMeta($) {
   ensureDir(DATA_DIR)
+
+  const appendixSubChapters = extractAppendixSubChapters($)
+
+  const chapters = CHAPTER_DEFS.map(d => {
+    const chapter = {
+      id: d.id,
+      title: d.title,
+      subtitle: d.subtitle,
+      description: d.description,
+    }
+    if (d.id === 'appendix' && appendixSubChapters.length > 0) {
+      chapter.subChapters = appendixSubChapters
+    }
+    return chapter
+  })
+
   const meta = {
     title: 'The Art of Perfumery',
     subtitle: 'And Methods of Obtaining the Odors of Plants',
     author: 'G.W. Septimus Piesse',
-    chapters: CHAPTER_DEFS.map(d => ({
-      id: d.id,
-      title: d.title,
-      subtitle: d.subtitle,
-    })),
+    chapters,
   }
 
   const content = `export const bookMeta = ${JSON.stringify(meta, null, 2)}\n`
   fs.writeFileSync(path.join(DATA_DIR, 'bookMeta.js'), content)
-  console.log('Written: data/bookMeta.js')
+  console.log(`Written: data/bookMeta.js (${chapters.length} chapters, ${appendixSubChapters.length} appendix sub-chapters)`)
 }
 
 // 主流程
@@ -183,13 +219,13 @@ function main() {
   copyImages()
 
   // 2. 解析 HTML 并拆分章节
-  const chapterHtmls = parseBook()
+  const { chapterHtmls, $ } = parseBook()
 
   // 3. 写入章节文件
   writeChapterFiles(chapterHtmls)
 
-  // 4. 写入元数据
-  writeBookMeta()
+  // 4. 写入元数据（需要 $ 来提取附录子章节锚点）
+  writeBookMeta($)
 
   console.log('\n=== Done! ===')
 }

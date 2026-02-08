@@ -9,6 +9,12 @@
     {
       "path": "pages/book/index",
       "style": {
+        "navigationBarTitleText": "书架"
+      }
+    },
+    {
+      "path": "pages/reader/index",
+      "style": {
         "navigationBarTitleText": "The Art of Perfumery",
         "navigationStyle": "custom"
       }
